@@ -146,6 +146,8 @@
 * [Vertical Parameter Alignment](#vertical-parameter-alignment)
 * [Vertical Parameter Alignment On Call](#vertical-parameter-alignment-on-call)
 * [Vertical Whitespace](#vertical-whitespace)
+* [Vertical Whitespace after Closing Braces](#vertical-whitespace-after-closing-braces)
+* [Vertical Whitespace after Opening Braces](#vertical-whitespace-after-opening-braces)
 * [Void Return](#void-return)
 * [Weak Delegate](#weak-delegate)
 * [XCTFail Message](#xctfail-message)
@@ -21395,6 +21397,145 @@ class BBBB {}
 
 
 
+```
+
+</details>
+
+
+
+## Vertical Whitespace after Closing Braces
+
+Identifier | Enabled by default | Supports autocorrection | Kind | Minimum Swift Compiler Version
+--- | --- | --- | --- | ---
+`vertical_whitespace_closing_braces` | Enabled | Yes | style | 3.0.0 
+
+Don't include vertical whitespace (empty line) before closing braces.
+
+### Examples
+
+<details>
+<summary>Non Triggering Examples</summary>
+
+```swift
+    print("x is 5")
+}
+```
+
+</details>
+<details>
+<summary>Triggering Examples</summary>
+
+```swift
+    print("x is 5")
+
+}
+```
+
+```swift
+    print("x is 5")
+    
+}
+```
+
+```swift
+    print("x is 5")
+
+
+}
+```
+
+</details>
+
+
+
+## Vertical Whitespace after Opening Braces
+
+Identifier | Enabled by default | Supports autocorrection | Kind | Minimum Swift Compiler Version
+--- | --- | --- | --- | ---
+`vertical_whitespace_opening_braces` | Enabled | Yes | style | 3.0.0 
+
+Don't include vertical whitespace (empty line) after opening braces.
+
+### Examples
+
+<details>
+<summary>Non Triggering Examples</summary>
+
+```swift
+struct MyStruct {
+  let x = 5
+```
+
+```swift
+if x == 5 {
+  print("x is 5")
+```
+
+```swift
+struct MyStruct {
+	let x = 5
+```
+
+```swift
+if x == 5 {
+    print("x is 5")
+```
+
+```swift
+struct MyStruct {
+    let x = 5
+```
+
+```swift
+if x == 5 {
+	print("x is 5")
+```
+
+</details>
+<details>
+<summary>Triggering Examples</summary>
+
+```swift
+struct MyStruct {
+
+    let x = 5
+```
+
+```swift
+struct MyStruct {
+
+  let x = 5
+```
+
+```swift
+if x == 5 {
+
+    print("x is 5")
+```
+
+```swift
+if x == 5 {
+
+  print("x is 5")
+```
+
+```swift
+if x == 5 {
+
+
+    print("x is 5")
+```
+
+```swift
+struct MyStruct {
+
+	let x = 5
+```
+
+```swift
+if x == 5 {
+
+	print("x is 5")
 ```
 
 </details>
