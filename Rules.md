@@ -21407,7 +21407,7 @@ class BBBB {}
 
 Identifier | Enabled by default | Supports autocorrection | Kind | Minimum Swift Compiler Version
 --- | --- | --- | --- | ---
-`vertical_whitespace_closing_braces` | Enabled | Yes | style | 3.0.0 
+`vertical_whitespace_closing_braces` | Disabled | Yes | style | 3.0.0 
 
 Don't include vertical whitespace (empty line) before closing braces.
 
@@ -21452,7 +21452,7 @@ Don't include vertical whitespace (empty line) before closing braces.
 
 Identifier | Enabled by default | Supports autocorrection | Kind | Minimum Swift Compiler Version
 --- | --- | --- | --- | ---
-`vertical_whitespace_opening_braces` | Enabled | Yes | style | 3.0.0 
+`vertical_whitespace_opening_braces` | Disabled | Yes | style | 3.0.0 
 
 Don't include vertical whitespace (empty line) after opening braces.
 
