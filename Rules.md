@@ -146,7 +146,7 @@
 * [Vertical Parameter Alignment](#vertical-parameter-alignment)
 * [Vertical Parameter Alignment On Call](#vertical-parameter-alignment-on-call)
 * [Vertical Whitespace](#vertical-whitespace)
-* [Vertical Whitespace after Closing Braces](#vertical-whitespace-after-closing-braces)
+* [Vertical Whitespace before Closing Braces](#vertical-whitespace-before-closing-braces)
 * [Vertical Whitespace after Opening Braces](#vertical-whitespace-after-opening-braces)
 * [Void Return](#void-return)
 * [Weak Delegate](#weak-delegate)
@@ -21403,7 +21403,7 @@ class BBBB {}
 
 
 
-## Vertical Whitespace after Closing Braces
+## Vertical Whitespace before Closing Braces
 
 Identifier | Enabled by default | Supports autocorrection | Kind | Minimum Swift Compiler Version
 --- | --- | --- | --- | ---
