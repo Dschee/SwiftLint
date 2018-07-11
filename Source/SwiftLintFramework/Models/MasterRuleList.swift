@@ -146,6 +146,7 @@ public let masterRuleList = RuleList(rules: [
     ValidIBInspectableRule.self,
     VerticalParameterAlignmentOnCallRule.self,
     VerticalParameterAlignmentRule.self,
+    VerticalWhitespaceBetweenCasesRule.self,
     VerticalWhitespaceRule.self,
     VoidReturnRule.self,
     WeakDelegateRule.self,
