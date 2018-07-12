@@ -20281,6 +20281,22 @@ class ViewController: UIViewController {
 }
 ```
 
+```swift
+        )
+}
+
+    }
+}
+```
+
+```swift
+foo(
+x: 5,
+y:6
+
+)
+```
+
 </details>
 
 
@@ -21417,8 +21433,48 @@ Don't include vertical whitespace (empty line) before closing braces.
 <summary>Non Triggering Examples</summary>
 
 ```swift
+[
+1,
+2,
+3
+]
+```
+
+```swift
+        )
+}
+    }
+}
+```
+
+```swift
     print("x is 5")
 }
+```
+
+```swift
+foo(
+x: 5,
+y:6
+)
+```
+
+```swift
+[1, 2].map { $0 }.filter {
+```
+
+```swift
+[1, 2].map { $0 }.filter { num in
+```
+
+```swift
+/*
+    class X {
+
+        let x = 5
+
+    }
+*/
 ```
 
 </details>
@@ -21435,6 +21491,15 @@ Don't include vertical whitespace (empty line) before closing braces.
     print("x is 5")
     
 }
+```
+
+```swift
+[
+1,
+2,
+3
+
+]
 ```
 
 ```swift
@@ -21472,8 +21537,23 @@ if x == 5 {
 ```
 
 ```swift
+[
+1,
+2,
+3
+]
+```
+
+```swift
 struct MyStruct {
 	let x = 5
+```
+
+```swift
+class X {
+    struct Y {
+    class Z {
+
 ```
 
 ```swift
@@ -21491,6 +21571,35 @@ if x == 5 {
 	print("x is 5")
 ```
 
+```swift
+foo(
+x: 5,
+y:6
+)
+```
+
+```swift
+[1, 2].map { $0 }.foo()
+```
+
+```swift
+[1, 2].map { $0 }.filter { num in
+```
+
+```swift
+// [1, 2].map { $0 }.filter { num in
+```
+
+```swift
+/*
+    class X {
+
+        let x = 5
+
+    }
+*/
+```
+
 </details>
 <details>
 <summary>Triggering Examples</summary>
@@ -21505,6 +21614,14 @@ struct MyStruct {
 struct MyStruct {
 
   let x = 5
+```
+
+```swift
+foo(
+
+x: 5,
+y:6
+)
 ```
 
 ```swift
@@ -21530,6 +21647,23 @@ if x == 5 {
 struct MyStruct {
 
 	let x = 5
+```
+
+```swift
+class X {
+    struct Y {
+
+    class Z {
+
+```
+
+```swift
+[
+
+1,
+2,
+3
+]
 ```
 
 ```swift
