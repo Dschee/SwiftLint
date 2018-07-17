@@ -43,6 +43,7 @@ public let masterRuleList = RuleList(rules: [
     ExtensionAccessModifierRule.self,
     FallthroughRule.self,
     FatalErrorMessageRule.self,
+    FileContentOrderRule.self,
     FileHeaderRule.self,
     FileLengthRule.self,
     FileNameRule.self,
