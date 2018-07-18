@@ -7971,9 +7971,11 @@ extension TestViewController: UITableViewDataSource {
 
 ```swift
 <<<<<<< HEAD
+<<<<<<< HEAD
 func foo<T>() {}
 =======
-class TestViewController: UIViewController {}
+=======
+↓class TestViewController: UIViewController {}
 
 // Supporting Types
 protocol TestViewControllerDelegate {
@@ -7983,7 +7985,53 @@ protocol TestViewControllerDelegate {
 
 ```swift
 // Extensions
-extension TestViewController: UITableViewDataSource {
+↓extension TestViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+}
+
+>>>>>>> Fix issues with file_types_order rule
+class TestViewController: UIViewController {}
+```
+
+```swift
+// Supporting Types
+protocol TestViewControllerDelegate {
+    func didPressTrackedButton()
+}
+
+↓class TestViewController: UIViewController {}
+
+// Extensions
+↓extension TestViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+}
+
+// Supporting Types
+protocol TestViewControllerDelegate {
+    func didPressTrackedButton()
+}
+```
+
+```swift
+// Supporting Types
+protocol TestViewControllerDelegate {
+    func didPressTrackedButton()
+}
+
+// Extensions
+↓extension TestViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
     }
@@ -7994,6 +8042,17 @@ extension TestViewController: UITableViewDataSource {
 }
 
 class TestViewController: UIViewController {}
+
+// Extensions
+extension TestViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        return UITableViewCell()
+    }
+}
 ```
 
 </details>
