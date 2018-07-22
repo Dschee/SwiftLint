@@ -204,6 +204,12 @@ class FatalErrorMessageRuleTests: XCTestCase {
     }
 }
 
+class FileTypesOrderRuleTests: XCTestCase {
+    func testWithDefaultConfiguration() {
+        verifyRule(FileTypesOrderRule.description)
+    }
+}
+
 class FirstWhereRuleTests: XCTestCase {
     func testWithDefaultConfiguration() {
         verifyRule(FirstWhereRule.description)
@@ -585,6 +591,12 @@ class TrailingSemicolonRuleTests: XCTestCase {
 class TypeBodyLengthRuleTests: XCTestCase {
     func testWithDefaultConfiguration() {
         verifyRule(TypeBodyLengthRule.description)
+    }
+}
+
+class TypeContentsOrderRuleTests: XCTestCase {
+    func testWithDefaultConfiguration() {
+        verifyRule(TypeContentsOrderRule.description)
     }
 }
 
