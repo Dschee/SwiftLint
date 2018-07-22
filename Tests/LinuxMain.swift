@@ -720,6 +720,12 @@ extension MultilineFunctionChainsRuleTests {
     ]
 }
 
+extension MultilineLiteralBracketsRuleTests {
+    static var allTests: [(String, (MultilineLiteralBracketsRuleTests) -> () throws -> Void)] = [
+        ("testWithDefaultConfiguration", testWithDefaultConfiguration)
+    ]
+}
+
 extension MultilineParametersRuleTests {
     static var allTests: [(String, (MultilineParametersRuleTests) -> () throws -> Void)] = [
         ("testWithDefaultConfiguration", testWithDefaultConfiguration)
@@ -1374,6 +1380,7 @@ XCTMain([
     testCase(ModifierOrderTests.allTests),
     testCase(MultilineArgumentsRuleTests.allTests),
     testCase(MultilineFunctionChainsRuleTests.allTests),
+    testCase(MultilineLiteralBracketsRuleTests.allTests),
     testCase(MultilineParametersRuleTests.allTests),
     testCase(MultipleClosuresWithTrailingClosureRuleTests.allTests),
     testCase(NestingRuleTests.allTests),
