@@ -76,9 +76,11 @@
 * [Missing Docs](#missing-docs)
 * [Modifier Order](#modifier-order)
 * [Multiline Arguments](#multiline-arguments)
+* [Multiline Arguments Brackets](#multiline-arguments-brackets)
 * [Multiline Function Chains](#multiline-function-chains)
 * [Multiline Literal Brackets](#multiline-literal-brackets)
 * [Multiline Parameters](#multiline-parameters)
+* [Multiline Parameters Brackets](#multiline-parameters-brackets)
 * [Multiple Closures with Trailing Closure](#multiple-closures-with-trailing-closure)
 * [Nesting](#nesting)
 * [Nimble Operator](#nimble-operator)
@@ -11011,6 +11013,58 @@ foo(
 
 
 
+## Multiline Arguments Brackets
+
+Identifier | Enabled by default | Supports autocorrection | Kind | Minimum Swift Compiler Version
+--- | --- | --- | --- | ---
+`multiline_arguments_brackets` | Disabled | No | style | 3.0.0 
+
+Multiline arguments should have their surrounding brackets in a new line.
+
+### Examples
+
+<details>
+<summary>Non Triggering Examples</summary>
+
+```swift
+foo(param1: "Param1", param2: "Param2", param3: "Param3")
+```
+
+```swift
+foo(
+    param1: "Param1", param2: "Param2", param3: "Param3"
+)
+```
+
+```swift
+func foo(
+    param1: "Param1",
+    param2: "Param2",
+    param3: "Param3"
+)
+```
+
+</details>
+<details>
+<summary>Triggering Examples</summary>
+
+```swift
+foo(↓param1: "Param1", param2: "Param2",
+         param3: "Param3"
+)
+```
+
+```swift
+foo(
+    param1: "Param1",
+    param2: "Param2",
+    param3: "Param3"↓)
+```
+
+</details>
+
+
+
 ## Multiline Function Chains
 
 Identifier | Enabled by default | Supports autocorrection | Kind | Analyzer | Minimum Swift Compiler Version
@@ -11685,6 +11739,109 @@ class Foo {
    class func ↓foo(param1: Int,
                   param2: Bool, param3: @escaping (Int) -> Void = { (x: Int) in }) { }
 }
+```
+
+</details>
+
+
+
+## Multiline Parameters Brackets
+
+Identifier | Enabled by default | Supports autocorrection | Kind | Minimum Swift Compiler Version
+--- | --- | --- | --- | ---
+`multiline_parameters_brackets` | Disabled | No | style | 3.0.0 
+
+Multiline parameters should have their surrounding brackets in a new line.
+
+### Examples
+
+<details>
+<summary>Non Triggering Examples</summary>
+
+```swift
+func foo(param1: String, param2: String, param3: String)
+```
+
+```swift
+func foo(
+    param1: String, param2: String, param3: String
+)
+```
+
+```swift
+func foo(
+    param1: String,
+    param2: String,
+    param3: String
+)
+```
+
+```swift
+class SomeType {
+    func foo(param1: String, param2: String, param3: String)
+}
+```
+
+```swift
+class SomeType {
+    func foo(
+        param1: String, param2: String, param3: String
+    )
+}
+```
+
+```swift
+class SomeType {
+    func foo(
+        param1: String,
+        param2: String,
+        param3: String
+    )
+}
+```
+
+```swift
+func foo<T>(param1: T, param2: String, param3: String) -> T
+```
+
+</details>
+<details>
+<summary>Triggering Examples</summary>
+
+```swift
+func foo(↓param1: String, param2: String,
+         param3: String
+)
+```
+
+```swift
+func foo(
+    param1: String,
+    param2: String,
+    param3: String↓)
+```
+
+```swift
+class SomeType {
+    func foo(↓param1: String, param2: String,
+             param3: String
+    )
+}
+```
+
+```swift
+class SomeType {
+    func foo(
+        param1: String,
+        param2: String,
+        param3: String↓)
+}
+```
+
+```swift
+func foo<T>(↓param1: T, param2: String,
+         param3: String
+) -> T
 ```
 
 </details>
