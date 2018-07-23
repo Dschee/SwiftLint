@@ -11801,7 +11801,7 @@ class SomeType {
 ```
 
 ```swift
-func foo<T>(param1: T, param2: String, param3: String) -> T
+func foo<T>(param1: T, param2: String, param3: String) -> T { /* some code */ }
 ```
 
 </details>
