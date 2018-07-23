@@ -9003,6 +9003,15 @@ func example4() {
 }
 ```
 
+```swift
+foo(
+    bar(
+        x: 5,
+        y: 7
+    )
+)
+```
+
 </details>
 <details>
 <summary>Triggering Examples</summary>
@@ -11065,6 +11074,22 @@ foo(
     param1: "Param1",
     param2: "Param2",
     param3: "Param3"↓)
+```
+
+```swift
+foo(↓bar(
+    x: 5,
+    y: 7
+)
+)
+```
+
+```swift
+foo(
+    bar(
+        x: 5,
+        y: 7
+)↓)
 ```
 
 </details>
