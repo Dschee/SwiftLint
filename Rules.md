@@ -10983,6 +10983,12 @@ foo(
 )
 ```
 
+```swift
+foo { param1, param2 in
+    print("hello world")
+}
+```
+
 </details>
 <details>
 <summary>Triggering Examples</summary>
