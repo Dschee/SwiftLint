@@ -21564,24 +21564,6 @@ struct MyStruct {
 ```
 
 ```swift
-[
-1,
-2,
-3
-]
-```
-
-```swift
-if x == 5 {
-  print("x is 5")
-```
-
-```swift
-struct MyStruct {
-	let x = 5
-```
-
-```swift
 class X {
     struct Y {
     class Z {
@@ -21590,12 +21572,47 @@ class X {
 
 ```swift
 if x == 5 {
-    print("x is 5")
+	print("x is 5")
 ```
 
 ```swift
 struct MyStruct {
     let x = 5
+```
+
+```swift
+foo(
+x: 5,
+y:6
+)
+```
+
+```swift
+if x == 5 {
+  print("x is 5")
+```
+
+```swift
+[
+1,
+2,
+3
+]
+```
+
+```swift
+struct MyStruct {
+	let x = 5
+```
+
+```swift
+if x == 5 {
+    print("x is 5")
+```
+
+```swift
+}) { _ in
+    self.dismiss(animated: false, completion: {
 ```
 
 ```swift
@@ -21605,15 +21622,8 @@ class Name {
 ```
 
 ```swift
-if x == 5 {
-	print("x is 5")
-```
-
-```swift
-foo(
-x: 5,
-y:6
-)
+KingfisherManager.shared.retrieveImage(with: url, options: nil, progressBlock: nil) { image, _, _, _ in
+    guard let img = image else { return }
 ```
 
 ```swift
@@ -21649,6 +21659,44 @@ struct MyStruct {
 ```
 
 ```swift
+if x == 5 {
+↓
+	print("x is 5")
+```
+
+```swift
+if x == 5 {
+↓
+    print("x is 5")
+```
+
+```swift
+KingfisherManager.shared.retrieveImage(with: url, options: nil, progressBlock: nil) { image, _, _, _ in
+↓
+    guard let img = image else { return }
+```
+
+```swift
+}) { _ in
+↓
+    self.dismiss(animated: false, completion: {
+```
+
+```swift
+if x == 5 {
+↓
+  print("x is 5")
+```
+
+```swift
+foo(
+↓
+x: 5,
+y:6
+)
+```
+
+```swift
 class Name {
 ↓
     run(5) { x in print(x) }
@@ -21659,18 +21707,6 @@ class Name {
 if x == 5 {
 ↓
 
-    print("x is 5")
-```
-
-```swift
-if x == 5 {
-↓
-	print("x is 5")
-```
-
-```swift
-if x == 5 {
-↓
     print("x is 5")
 ```
 
@@ -21698,23 +21734,9 @@ struct MyStruct {
 ```
 
 ```swift
-if x == 5 {
-↓
-  print("x is 5")
-```
-
-```swift
 struct MyStruct {
 ↓
 	let x = 5
-```
-
-```swift
-foo(
-↓
-x: 5,
-y:6
-)
 ```
 
 </details>
