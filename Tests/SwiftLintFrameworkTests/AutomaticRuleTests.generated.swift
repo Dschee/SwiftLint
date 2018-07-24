@@ -588,12 +588,6 @@ class TypeBodyLengthRuleTests: XCTestCase {
     }
 }
 
-class TypeContentsOrderRuleTests: XCTestCase {
-    func testWithDefaultConfiguration() {
-        verifyRule(TypeContentsOrderRule.description)
-    }
-}
-
 class UnavailableFunctionRuleTests: XCTestCase {
     func testWithDefaultConfiguration() {
         verifyRule(UnavailableFunctionRule.description)
