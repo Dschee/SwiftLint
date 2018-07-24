@@ -20471,11 +20471,6 @@ Specifies the order of subtypes, properties, methods & more within a type.
 <summary>Non Triggering Examples</summary>
 
 ```swift
-// Supporting Types
-protocol TestViewControllerDelegate {
-    func didPressTrackedButton()
-}
-
 class TestViewController: UIViewController {
     // Type Aliases
     typealias CompletionHandler = ((TestEnum) -> Void)
@@ -20568,17 +20563,6 @@ class TestViewController: UIViewController {
         set {
             log.warning("Just a test", newValue)
         }
-    }
-}
-
-// Extensions
-extension TestViewController: UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
-    }
-
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
     }
 }
 ```
