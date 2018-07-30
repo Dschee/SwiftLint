@@ -10998,12 +10998,6 @@ foo(
 )
 ```
 
-```swift
-foo { param1, param2 in
-    print("hello world")
-}
-```
-
 </details>
 <details>
 <summary>Triggering Examples</summary>
@@ -11063,6 +11057,27 @@ func foo(
     param2: "Param2",
     param3: "Param3"
 )
+```
+
+```swift
+foo { param1, param2 in
+    print("hello world")
+}
+```
+
+```swift
+foo(
+    bar(
+        x: 5,
+        y: 7
+    )
+)
+```
+
+```swift
+AlertViewModel.AlertAction(title: "some title", style: .default) {
+    AlertManager.shared.presentNextDebugAlert()
+}
 ```
 
 </details>
