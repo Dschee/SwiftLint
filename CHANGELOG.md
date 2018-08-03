@@ -130,12 +130,6 @@
 * Add options `prefix_pattern` and `suffix_pattern` to rule `file_name`.  
   [Cihat Gündüz](https://github.com/Dschee)
   [#2309](https://github.com/realm/SwiftLint/issues/2309)
-* Add new rule `vertical_whitespace_between_cases` to warn against crowded
-
-* Add new opt-in rule `vertical_whitespace_between_cases` to warn against crowded
-  switch case cases.  
-  [Cihat Gündüz](https://github.com/Dschee)
-  [#1517](https://github.com/realm/SwiftLint/issues/1517)
 
 * Add new bool config option `if_only` to rule `conditional_returns_on_newline`
   to specify that the rule should only be applied to `if` statements.  
@@ -533,7 +527,10 @@ The next release will require Swift 4.0 or higher to build.
 
 #### Enhancements
 
-* None.
+* Add new opt-in rule `vertical_whitespace_between_cases` to warn against crowded
+  switch case cases.  
+  [Cihat Gündüz](https://github.com/Dschee)
+  [#1517](https://github.com/realm/SwiftLint/issues/1517)
 
 #### Bug Fixes
 
