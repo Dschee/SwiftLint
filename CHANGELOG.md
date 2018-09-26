@@ -75,6 +75,16 @@
   [Marcelo Fabri](https://github.com/marcelofabri)
   [#2395](https://github.com/realm/SwiftLint/issues/2395)
 
+* Add new opt-in rule `file_types_order` to specify how the types in a file
+  should be sorted.  
+  [Cihat Gündüz](https://github.com/Dschee)
+  [#2294](https://github.com/realm/SwiftLint/issues/2294)
+
+* Add new opt-in rule `type_contents_order` to specify the order of subtypes,
+  properties, methods & more within a type.  
+  [Cihat Gündüz](https://github.com/Dschee)
+  [#2294](https://github.com/realm/SwiftLint/issues/2294)
+
 #### Bug Fixes
 
 * Fix `comma` rule false positives on object literals (for example, images).  
@@ -527,15 +537,7 @@ The next release will require Swift 4.0 or higher to build.
 
 #### Enhancements
 
-* Add new opt-in rule `file_types_order` to specify how the types in a file
-  should be sorted.  
-  [Cihat Gündüz](https://github.com/Dschee)
-  [#2294](https://github.com/realm/SwiftLint/issues/2294)
-
-* Add new opt-in rule `type_contents_order` to specify the order of subtypes,
-  properties, methods & more within a type.  
-  [Cihat Gündüz](https://github.com/Dschee)
-  [#2294](https://github.com/realm/SwiftLint/issues/2294)
+* None.
 
 #### Bug Fixes
 
