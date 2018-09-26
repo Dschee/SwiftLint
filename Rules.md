@@ -151,6 +151,7 @@
 * [Vertical Parameter Alignment](#vertical-parameter-alignment)
 * [Vertical Parameter Alignment On Call](#vertical-parameter-alignment-on-call)
 * [Vertical Whitespace](#vertical-whitespace)
+* [Vertical Whitespace Between Cases](#vertical-whitespace-between-cases)
 * [Void Return](#void-return)
 * [Weak Delegate](#weak-delegate)
 * [XCTFail Message](#xctfail-message)
@@ -22159,6 +22160,124 @@ class BBBB {}
 
 
 
+```
+
+</details>
+
+
+
+## Vertical Whitespace Between Cases
+
+Identifier | Enabled by default | Supports autocorrection | Kind | Analyzer | Minimum Swift Compiler Version
+--- | --- | --- | --- | --- | ---
+`vertical_whitespace_between_cases` | Disabled | Yes | style | No | 3.0.0 
+
+Include a vertical whitespace (empty line) between cases in switch statements.
+
+### Examples
+
+<details>
+<summary>Non Triggering Examples</summary>
+
+```swift
+    switch x {
+    case .valid:
+        print("multiple ...")
+        print("... lines")
+
+    case .invalid:
+        print("multiple ...")
+        print("... lines")
+    }
+```
+
+```swift
+    switch x {
+    case .valid:
+        print("x is valid")
+
+    case .invalid:
+        print("x is invalid")
+    }
+```
+
+```swift
+    switch x {
+    case 0..<5:
+        print("x is valid")
+
+    default:
+        print("x is invalid")
+    }
+```
+
+```swift
+switch x {
+
+case 0..<5:
+    print("x is low")
+
+case 5..<10:
+    print("x is high")
+
+default:
+    print("x is invalid")
+
+}
+```
+
+```swift
+switch x {
+case 0..<5:
+    print("x is low")
+
+case 5..<10:
+    print("x is high")
+
+default:
+    print("x is invalid")
+}
+```
+
+```swift
+switch x {
+case 0..<5: print("x is low")
+case 5..<10: print("x is high")
+default: print("x is invalid")
+}
+```
+
+</details>
+<details>
+<summary>Triggering Examples</summary>
+
+```swift
+    switch x {
+    case .valid:
+        print("multiple ...")
+        print("... lines")
+↓    case .invalid:
+        print("multiple ...")
+        print("... lines")
+    }
+```
+
+```swift
+    switch x {
+    case .valid:
+        print("x is valid")
+↓    case .invalid:
+        print("x is invalid")
+    }
+```
+
+```swift
+    switch x {
+    case 0..<5:
+        print("x is valid")
+↓    default:
+        print("x is invalid")
+    }
 ```
 
 </details>

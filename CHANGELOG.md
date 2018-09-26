@@ -120,6 +120,11 @@
   [Ornithologist Coder](https://github.com/ornithocoder)
   [#2374](https://github.com/realm/SwiftLint/issues/2374)
 
+* Add new opt-in rule `vertical_whitespace_between_cases` to warn against crowded
+  switch case cases.  
+  [Cihat Gündüz](https://github.com/Dschee)
+  [#1517](https://github.com/realm/SwiftLint/issues/1517)
+
 ## 0.27.0: Heavy Duty
 
 #### Breaking
