@@ -84,6 +84,20 @@
   properties, methods & more within a type.  
   [Cihat Gündüz](https://github.com/Dschee)
   [#2294](https://github.com/realm/SwiftLint/issues/2294)
+* Add new opt-in rule `multiline_arguments_brackets` to warn against multiline
+  function call arguments with surrounding brackets without newline.  
+  [Cihat Gündüz](https://github.com/Dschee)
+  [#2306](https://github.com/realm/SwiftLint/issues/2306)
+
+* Add new opt-in rule `multiline_literal_brackets` to warn against multiline
+  literal arrays & dictionaries with surrounding brackets without newline.  
+  [Cihat Gündüz](https://github.com/Dschee)
+  [#2306](https://github.com/realm/SwiftLint/issues/2306)
+
+* Add new opt-in rule `multiline_parameters_brackets` to warn against multiline
+  function definition parameters with surrounding brackets without newline.  
+  [Cihat Gündüz](https://github.com/Dschee)
+  [#2306](https://github.com/realm/SwiftLint/issues/2306)
 
 #### Bug Fixes
 
@@ -293,7 +307,7 @@
   type or extension declared in the file (if any).  
   [JP Simard](https://github.com/jpsim)
   [#1420](https://github.com/realm/SwiftLint/issues/1420)
-
+  
 * Add `redundant_type_annotation` opt-in rule which warns against
   unnecessary type annotations for variables.  
   [Šimon Javora](https://github.com/sjavora)
@@ -518,7 +532,7 @@ The next release will require Swift 4.0 or higher to build.
 * Fix false positive in `empty_enum_arguments` rule when using closures.  
   [Marcelo Fabri](https://github.com/marcelofabri)
   [#2041](https://github.com/realm/SwiftLint/issues/2041)
-
+  
 * Fix false positives in `force_unwrapping` rule when declaring functions that
   return implicitly unwrapped collections (for example `[Int]!` or
   `[AnyHashable: Any]!`).  
@@ -912,7 +926,7 @@ The next release will require Swift 4.0 or higher to build.
   [Marcelo Fabri](https://github.com/marcelofabri)
   [#1787](https://github.com/realm/SwiftLint/issues/1787)
 
-* Fix incorrect violations and autocorrections on
+* Fix incorrect violations and autocorrections on 
   `unneeded_parentheses_in_closure_argument` rule that were generated in some
   cases (mainly when using chained method calls with closures).  
   [Marcelo Fabri](https://github.com/marcelofabri)
@@ -1043,7 +1057,7 @@ The next release will require Swift 4.0 or higher to build.
   [Jamie Edge](https://github.com/JamieEdge)
   [#1586](https://github.com/realm/SwiftLint/issues/1586)
 
-* Fix crash when using `--config` with a relative path and
+* Fix crash when using `--config` with a relative path and 
   `--path` with a file.  
   [Marcelo Fabri](https://github.com/marcelofabri)
   [#1694](https://github.com/realm/SwiftLint/issues/1694)
