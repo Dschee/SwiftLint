@@ -75,6 +75,16 @@
   [Marcelo Fabri](https://github.com/marcelofabri)
   [#2395](https://github.com/realm/SwiftLint/issues/2395)
 
+* Add new opt-in rule `vertical_whitespace_opening_braces` to warn against empty lines
+  after opening braces.  
+  [Cihat Gündüz](https://github.com/Dschee)
+  [#1518](https://github.com/realm/SwiftLint/issues/1518)
+
+* Add new opt-in rule `vertical_whitespace_closing_braces` to warn against empty lines
+  before closing braces.  
+  [Cihat Gündüz](https://github.com/Dschee)
+  [#1518](https://github.com/realm/SwiftLint/issues/1518)
+
 #### Bug Fixes
 
 * Fix `comma` rule false positives on object literals (for example, images).  
@@ -130,7 +140,6 @@
 * Add options `prefix_pattern` and `suffix_pattern` to rule `file_name`.  
   [Cihat Gündüz](https://github.com/Dschee)
   [#2309](https://github.com/realm/SwiftLint/issues/2309)
-* Add new rule `vertical_whitespace_opening_braces` to warn against empty lines
 
 * Add new bool config option `if_only` to rule `conditional_returns_on_newline`
   to specify that the rule should only be applied to `if` statements.  
@@ -528,15 +537,7 @@ The next release will require Swift 4.0 or higher to build.
 
 #### Enhancements
 
-* Add new opt-in rule `vertical_whitespace_opening_braces` to warn against empty lines
-  after opening braces.  
-  [Cihat Gündüz](https://github.com/Dschee)
-  [#1518](https://github.com/realm/SwiftLint/issues/1518)
-
-* Add new opt-in rule `vertical_whitespace_closing_braces` to warn against empty lines
-  before closing braces.  
-  [Cihat Gündüz](https://github.com/Dschee)
-  [#1518](https://github.com/realm/SwiftLint/issues/1518)
+* None.
 
 #### Bug Fixes
 
