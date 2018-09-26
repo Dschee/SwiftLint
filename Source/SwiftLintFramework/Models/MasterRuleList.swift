@@ -1,4 +1,4 @@
-// Generated using Sourcery 0.14.0 — https://github.com/krzysztofzablocki/Sourcery
+// Generated using Sourcery 0.15.0 — https://github.com/krzysztofzablocki/Sourcery
 // DO NOT EDIT
 
 public let masterRuleList = RuleList(rules: [
@@ -152,6 +152,8 @@ public let masterRuleList = RuleList(rules: [
     VerticalParameterAlignmentOnCallRule.self,
     VerticalParameterAlignmentRule.self,
     VerticalWhitespaceBetweenCasesRule.self,
+    VerticalWhitespaceClosingBracesRule.self,
+    VerticalWhitespaceOpeningBracesRule.self,
     VerticalWhitespaceRule.self,
     VoidReturnRule.self,
     WeakDelegateRule.self,

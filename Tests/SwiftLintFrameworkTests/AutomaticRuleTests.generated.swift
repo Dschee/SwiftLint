@@ -1,4 +1,4 @@
-// Generated using Sourcery 0.14.0 — https://github.com/krzysztofzablocki/Sourcery
+// Generated using Sourcery 0.15.0 — https://github.com/krzysztofzablocki/Sourcery
 // DO NOT EDIT
 
 import SwiftLintFramework
@@ -669,6 +669,18 @@ class VerticalParameterAlignmentRuleTests: XCTestCase {
 class VerticalWhitespaceBetweenCasesRuleTests: XCTestCase {
     func testWithDefaultConfiguration() {
         verifyRule(VerticalWhitespaceBetweenCasesRule.description)
+    }
+}
+
+class VerticalWhitespaceClosingBracesRuleTests: XCTestCase {
+    func testWithDefaultConfiguration() {
+        verifyRule(VerticalWhitespaceClosingBracesRule.description)
+    }
+}
+
+class VerticalWhitespaceOpeningBracesRuleTests: XCTestCase {
+    func testWithDefaultConfiguration() {
+        verifyRule(VerticalWhitespaceOpeningBracesRule.description)
     }
 }
 

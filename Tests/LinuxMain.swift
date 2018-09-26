@@ -1,4 +1,4 @@
-// Generated using Sourcery 0.14.0 — https://github.com/krzysztofzablocki/Sourcery
+// Generated using Sourcery 0.15.0 — https://github.com/krzysztofzablocki/Sourcery
 // DO NOT EDIT
 
 @testable import SwiftLintFrameworkTests
@@ -1272,6 +1272,18 @@ extension VerticalWhitespaceBetweenCasesRuleTests {
     ]
 }
 
+extension VerticalWhitespaceClosingBracesRuleTests {
+    static var allTests: [(String, (VerticalWhitespaceClosingBracesRuleTests) -> () throws -> Void)] = [
+        ("testWithDefaultConfiguration", testWithDefaultConfiguration)
+    ]
+}
+
+extension VerticalWhitespaceOpeningBracesRuleTests {
+    static var allTests: [(String, (VerticalWhitespaceOpeningBracesRuleTests) -> () throws -> Void)] = [
+        ("testWithDefaultConfiguration", testWithDefaultConfiguration)
+    ]
+}
+
 extension VerticalWhitespaceRuleTests {
     static var allTests: [(String, (VerticalWhitespaceRuleTests) -> () throws -> Void)] = [
         ("testVerticalWhitespaceWithDefaultConfiguration", testVerticalWhitespaceWithDefaultConfiguration),
@@ -1491,6 +1503,8 @@ XCTMain([
     testCase(VerticalParameterAlignmentOnCallRuleTests.allTests),
     testCase(VerticalParameterAlignmentRuleTests.allTests),
     testCase(VerticalWhitespaceBetweenCasesRuleTests.allTests),
+    testCase(VerticalWhitespaceClosingBracesRuleTests.allTests),
+    testCase(VerticalWhitespaceOpeningBracesRuleTests.allTests),
     testCase(VerticalWhitespaceRuleTests.allTests),
     testCase(VoidReturnRuleTests.allTests),
     testCase(WeakDelegateRuleTests.allTests),

@@ -84,6 +84,7 @@
   properties, methods & more within a type.  
   [Cihat Gündüz](https://github.com/Dschee)
   [#2294](https://github.com/realm/SwiftLint/issues/2294)
+
 * Add new opt-in rule `multiline_arguments_brackets` to warn against multiline
   function call arguments with surrounding brackets without newline.  
   [Cihat Gündüz](https://github.com/Dschee)
@@ -98,6 +99,16 @@
   function definition parameters with surrounding brackets without newline.  
   [Cihat Gündüz](https://github.com/Dschee)
   [#2306](https://github.com/realm/SwiftLint/issues/2306)
+
+* Add new opt-in rule `vertical_whitespace_opening_braces` to warn against empty lines
+  after opening braces.  
+  [Cihat Gündüz](https://github.com/Dschee)
+  [#1518](https://github.com/realm/SwiftLint/issues/1518)
+
+* Add new opt-in rule `vertical_whitespace_closing_braces` to warn against empty lines
+  before closing braces.  
+  [Cihat Gündüz](https://github.com/Dschee)
+  [#1518](https://github.com/realm/SwiftLint/issues/1518)
 
 #### Bug Fixes
 
