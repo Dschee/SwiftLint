@@ -20281,22 +20281,6 @@ class ViewController: UIViewController {
 }
 ```
 
-```swift
-        )
-}
-
-    }
-}
-```
-
-```swift
-foo(
-x: 5,
-y:6
-
-)
-```
-
 </details>
 
 
@@ -21421,9 +21405,9 @@ class BBBB {}
 
 ## Vertical Whitespace before Closing Braces
 
-Identifier | Enabled by default | Supports autocorrection | Kind | Minimum Swift Compiler Version
---- | --- | --- | --- | ---
-`vertical_whitespace_closing_braces` | Disabled | Yes | style | 3.0.0 
+Identifier | Enabled by default | Supports autocorrection | Kind | Analyzer | Minimum Swift Compiler Version
+--- | --- | --- | --- | --- | ---
+`vertical_whitespace_closing_braces` | Disabled | Yes | style | No | 3.0.0 
 
 Don't include vertical whitespace (empty line) before closing braces.
 
@@ -21441,11 +21425,6 @@ Don't include vertical whitespace (empty line) before closing braces.
 ```
 
 ```swift
-    print("x is 5")
-}
-```
-
-```swift
 class Name {
     run(5) { x in print(x) }
 }
@@ -21455,6 +21434,11 @@ class Name {
         )
 }
     }
+}
+```
+
+```swift
+    print("x is 5")
 }
 ```
 
@@ -21488,11 +21472,19 @@ y:6
 <summary>Triggering Examples</summary>
 
 ```swift
-foo(
-x: 5,
-y:6
+[
+1,
+2,
+3
 ↓
-)
+]
+```
+
+```swift
+    print("x is 5")
+↓
+
+}
 ```
 
 ```swift
@@ -21505,13 +21497,21 @@ y:6
 
 ```swift
     print("x is 5")
-↓    
+↓
 }
 ```
 
 ```swift
-    print("x is 5")
+foo(
+x: 5,
+y:6
 ↓
+)
+```
+
+```swift
+    print("x is 5")
+↓    
 }
 ```
 
@@ -21522,34 +21522,15 @@ class Name {
 }
 ```
 
-<<<<<<< HEAD
-=======
-```swift
-    print("x is 5")
-↓
-
-}
-```
-
-```swift
-[
-1,
-2,
-3
-↓
-]
-```
-
->>>>>>> Point to exact location of violation + update tests
 </details>
 
 
 
 ## Vertical Whitespace after Opening Braces
 
-Identifier | Enabled by default | Supports autocorrection | Kind | Minimum Swift Compiler Version
---- | --- | --- | --- | ---
-`vertical_whitespace_opening_braces` | Disabled | Yes | style | 3.0.0 
+Identifier | Enabled by default | Supports autocorrection | Kind | Analyzer | Minimum Swift Compiler Version
+--- | --- | --- | --- | --- | ---
+`vertical_whitespace_opening_braces` | Disabled | Yes | style | No | 3.0.0 
 
 Don't include vertical whitespace (empty line) after opening braces.
 
@@ -21559,15 +21540,8 @@ Don't include vertical whitespace (empty line) after opening braces.
 <summary>Non Triggering Examples</summary>
 
 ```swift
-struct MyStruct {
-  let x = 5
-```
-
-```swift
-class X {
-    struct Y {
-    class Z {
-
+KingfisherManager.shared.retrieveImage(with: url, options: nil, progressBlock: nil) { image, _, _, _ in
+    guard let img = image else { return }
 ```
 
 ```swift
@@ -21581,23 +21555,10 @@ struct MyStruct {
 ```
 
 ```swift
-foo(
-x: 5,
-y:6
-)
-```
+class X {
+    struct Y {
+    class Z {
 
-```swift
-if x == 5 {
-  print("x is 5")
-```
-
-```swift
-[
-1,
-2,
-3
-]
 ```
 
 ```swift
@@ -21611,8 +21572,25 @@ if x == 5 {
 ```
 
 ```swift
+foo(
+x: 5,
+y:6
+)
+```
+
+```swift
 }) { _ in
     self.dismiss(animated: false, completion: {
+```
+
+```swift
+if x == 5 {
+  print("x is 5")
+```
+
+```swift
+struct MyStruct {
+  let x = 5
 ```
 
 ```swift
@@ -21622,8 +21600,11 @@ class Name {
 ```
 
 ```swift
-KingfisherManager.shared.retrieveImage(with: url, options: nil, progressBlock: nil) { image, _, _, _ in
-    guard let img = image else { return }
+[
+1,
+2,
+3
+]
 ```
 
 ```swift
@@ -21653,61 +21634,15 @@ KingfisherManager.shared.retrieveImage(with: url, options: nil, progressBlock: n
 <summary>Triggering Examples</summary>
 
 ```swift
-struct MyStruct {
-↓
-    let x = 5
-```
-
-```swift
-if x == 5 {
-↓
-	print("x is 5")
-```
-
-```swift
 if x == 5 {
 ↓
     print("x is 5")
-```
-
-```swift
-KingfisherManager.shared.retrieveImage(with: url, options: nil, progressBlock: nil) { image, _, _, _ in
-↓
-    guard let img = image else { return }
-```
-
-```swift
-}) { _ in
-↓
-    self.dismiss(animated: false, completion: {
 ```
 
 ```swift
 if x == 5 {
 ↓
   print("x is 5")
-```
-
-```swift
-foo(
-↓
-x: 5,
-y:6
-)
-```
-
-```swift
-class Name {
-↓
-    run(5) { x in print(x) }
-}
-```
-
-```swift
-if x == 5 {
-↓
-
-    print("x is 5")
 ```
 
 ```swift
@@ -21728,6 +21663,32 @@ class X {
 ```
 
 ```swift
+foo(
+↓
+x: 5,
+y:6
+)
+```
+
+```swift
+}) { _ in
+↓
+    self.dismiss(animated: false, completion: {
+```
+
+```swift
+KingfisherManager.shared.retrieveImage(with: url, options: nil, progressBlock: nil) { image, _, _, _ in
+↓
+    guard let img = image else { return }
+```
+
+```swift
+struct MyStruct {
+↓
+	let x = 5
+```
+
+```swift
 struct MyStruct {
 ↓
   let x = 5
@@ -21736,7 +21697,27 @@ struct MyStruct {
 ```swift
 struct MyStruct {
 ↓
-	let x = 5
+    let x = 5
+```
+
+```swift
+if x == 5 {
+↓
+
+    print("x is 5")
+```
+
+```swift
+class Name {
+↓
+    run(5) { x in print(x) }
+}
+```
+
+```swift
+if x == 5 {
+↓
+	print("x is 5")
 ```
 
 </details>
