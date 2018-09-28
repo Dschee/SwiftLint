@@ -135,6 +135,10 @@
   switch case cases.  
   [Cihat Gündüz](https://github.com/Dschee)
   [#1517](https://github.com/realm/SwiftLint/issues/1517)
+* Fix false positives on `explicit_type_interface` rule when
+  configured with option `allowRedundancy` set to `true`.  
+  [Cihat Gündüz](https://github.com/Dschee)
+  [#2425](https://github.com/realm/SwiftLint/issues/2425)
 
 ## 0.27.0: Heavy Duty
 
